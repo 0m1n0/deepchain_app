@@ -1,20 +1,32 @@
 # Description
-This app is a base application that compute the loglikelihood (the probability that a protein is natural or not).
-
-We use a bio-transformers with a ESM 'prot_bert' model as backend to make the computation of logits
+This app is a base application that compute the probability if the proteins belong to human.
+Scores are computed using SGDClassifier (linear classifier with Stochastic Gradient Descent training),
+    provided by sklearn.linear_model. Two features are used:
+        - Embeddings: given by DeepChain using BioTransformers
+        - One-hot encoding: categorical variables (amino acid) are represented as binary vectors using OneHotEncoder.
 
 # Tags
 
 ## libraries
-- pytorch==1.5.0
+- numpy
+- scipy
+- sklearn
+- biodatasets
+- biotransformers
+- deepchain.components
+- torch
+- joblib
+- loguru
+- tqdm
+- statistics
+- matplotlib
 
 ## tasks
-- probability
-- transformers
-- unsupervised
+- Classification
+- SGD
 
 ## embeddings
-- ESM
+- protbert(cls)
 
 ## datasets
 
