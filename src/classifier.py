@@ -146,7 +146,4 @@ if __name__ == "__main__":
         features
     )
     classifier.run_sgd(X_train, X_train_val, X_val, y_train, y_train_val, y_val)
-    classifier.save(
-        f"checkpoint/SGD_classifier_feature_{args.feature}.joblib.pkl"
-    )
-
+    classifier.save(f"checkpoint/SGD_classifier_feature_{args.feature}.joblib.pkl")
