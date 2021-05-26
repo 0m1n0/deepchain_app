@@ -1,6 +1,6 @@
 {
-"tasks": [Classification, SGD,],
-"libraries": [sklearn, biotransformers, biodatasets, deepchain, scipy, torch],
-"embeddings": [protbert(cls)],
+"tasks": ["Classification", "SGD"],
+"libraries": ["sklearn", "biotransformers", "biodatasets", "deepchain", "scipy", "torch"],
+"embeddings": ["protbert(cls)"],
 "datasets": []
 }
