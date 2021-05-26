@@ -1,8 +1,10 @@
 # Description
+
 This project aims to evaluate protein sequences if they belong to humans or pathogens.
 It is a collaborative framework provided by DeepChain apps. The main [deepchain-apps](https://pypi.org/project/deepchain-apps/) package can be found on pypi.
 To leverage the apps capability, take a look at the [bio-transformers](https://pypi.org/project/bio-transformers/) and [bio-datasets](https://pypi.org/project/bio-datasets) package.
----
+
+
 # Usage
 Linear classifiers with SGD (stochastic gradient descent) training,  [sklearn.linear_model.SGDClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html), is applied on two types of features:
  -  Probert embeddings: given by [deepchain-apps](https://pypi.org/project/deepchain-apps/) using [bio-transformers](https://pypi.org/project/bio-transformers/)
@@ -47,7 +49,7 @@ The output show the score for each protein and each feature in dictionnary forma
 ```
 The score [0,1] correpond to the probability that the proteins belong to the human class.
 
----
+
 ## Required Python packages
 python >= 3.7
 ```python
