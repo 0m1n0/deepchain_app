@@ -21,7 +21,8 @@ You can train/validate/test data and save classifiers as below:
 python src/classifier.py -f probert_embedding # using probert embedding features
 python src/classifier.py -f one_hot_encoding # using one-hot encoding features
 ```
-Training with one-hot encoding takes a few minutes the first time but as the feature information will be saved, it will be faster from the 2nd time
+Training with one-hot encoding takes a few minutes the first time but as the feature information will be saved, it will be faster from the 2nd time.
+
 You can check the information at any time with the help command:
 ```bash
 python src/classifier.py -h # help
@@ -38,11 +39,11 @@ The output show the score for each protein and each feature in dictionnary forma
 ```python
 [
   {
-    'SGD_probert_embedding':score_of_prot1
+    'SGD_probert_embedding':score_of_prot1,
     'SGD_one_hot_encoding':score_of_prot1
   },
    {
-    'SGD_probert_embedding':score_of_prot2
+    'SGD_probert_embedding':score_of_prot2,
     'SGD_one_hot_encoding':score_of_prot2
   }
 ]
